@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>CGS 0004</title>
+    <script type="text/javascript" src="VersionJs.js"></script>
+    <script type="text/javascript">
+      function code(){
+        var s = document.getElementById("code").value;
+        NametoCode(s)
+      }
+    </script>
+  </head>
+  <body>
+    <p>Name to Code:</p>
+    <form action="index.html" method="post" onsubmit="code()">
+      <input id="code" type="text" /><input type="submit">
+    </form>
+  </body>
+</html>
