@@ -1,9 +1,9 @@
 function NametoCode(name){
   var code = "";
   if(name[0] == "P"){
-    if(name[0:1] == "Pa"){
+    if(name[1] == "a"){
       code = "1";
-    }else if (name[0:1] == "Pb") {
+    }else if (name[1] == "b") {
       code = "2";
     }else{
       return false;
@@ -20,8 +20,10 @@ function NametoCode(name){
       code = code + version[1];
     }
     code = code + "9";
-    code = code + name[-2] + name[-1] ;
+    bugfix = name.split("Bfx",2);
+    code = code + bugfix[1];
   }else if (true) {
 
   }
+  return code;
 }
